@@ -1,5 +1,7 @@
 (function(window) {
 
+var SCRIPT = %SCRIPT%
+
 %CONTENT%
 
 
