@@ -25,7 +25,7 @@ var createStartFn = function(tc, jasmineEnvPassedIn) {
 
     var files = Object.keys(window.__karma__.files);
     files = files.filter(function(file){
-      return file !== "/base/lib/adapter.js";
+      return !(/lib\/adapter\.js/.test(file));
     }).map(function(file){
       return document.origin + file;
     });

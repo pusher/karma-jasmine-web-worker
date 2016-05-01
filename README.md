@@ -1,6 +1,6 @@
-# karma-jasmine [![Build Status](https://travis-ci.org/karma-runner/karma-jasmine.png?branch=master)](https://travis-ci.org/karma-runner/karma-jasmine)
+# karma-jasmine-web-worker
 
-> Adapter for the [Jasmine](http://pivotal.github.io/jasmine/) testing framework.
+Fork of karma-jasmine to let specs run in web workers.
 
 ## Installation
 
@@ -11,14 +11,14 @@ The easiest way is to keep `karma-jasmine` as a devDependency in your `package.j
 {
   "devDependencies": {
     "karma": "~0.10",
-    "karma-jasmine": "~0.1"
+    "karma-jasmine-web-worker": "~0.1"
   }
 }
 ```
 
 You can simple do it by:
 ```bash
-npm install karma-jasmine --save-dev
+npm install karma-jasmine-web-worker --save-dev
 ```
 
 ## Configuration
@@ -26,7 +26,7 @@ npm install karma-jasmine --save-dev
 // karma.conf.js
 module.exports = function(config) {
   config.set({
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine-web-worker'],
 
     files: [
       '*.js'

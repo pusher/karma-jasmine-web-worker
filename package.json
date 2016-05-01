@@ -1,6 +1,6 @@
 {
   "name": "karma-jasmine-web-worker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run Karma and Jasmine tests in a web worker",
   "main": "lib/index.js",
   "scripts": {
