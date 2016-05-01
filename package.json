@@ -1,14 +1,14 @@
 {
-  "name": "karma-jasmine",
-  "version": "0.1.5",
-  "description": "A Karma plugin - adapter for Jasmine testing framework.",
+  "name": "karma-jasmine-web-worker",
+  "version": "0.1.0",
+  "description": "Run Karma and Jasmine tests in a web worker",
   "main": "lib/index.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-jasmine.git"
+    "url": "git://github.com/jpatel531/karma-jasmine-web-worker.git"
   },
   "keywords": [
     "karma-plugin",
@@ -32,7 +32,6 @@
   },
   "license": "MIT",
   "contributors": [
-    "Friedel Ziegelmayer <friedel.ziegelmayer@gmail.com>",
-    "Barry Fitzgerald <barfitzgerald@gmail.com>"
+    "Jamie Patel <jamie@notespublication.com>"
   ]
 }
