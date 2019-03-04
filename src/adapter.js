@@ -27,7 +27,7 @@ var createStartFn = function(tc, jasmineEnvPassedIn) {
     files = files.filter(function(file){
       return !(/lib\/adapter\.js/.test(file));
     }).map(function(file){
-      return document.origin + file;
+      return window.origin + file;
     });
 
     var blob = new Blob([SCRIPT], {type: 'application/javascript'});
