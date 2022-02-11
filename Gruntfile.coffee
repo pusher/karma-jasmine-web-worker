@@ -38,7 +38,6 @@ module.exports = (grunt) ->
 
     karma:
       adapter:
-        configFile: 'karma-v0.8.conf.js'
         autoWatch: false
         singleRun: true
         reporters: ['dots']

@@ -2,13 +2,13 @@ function handleMessage(tc, e) {
   var message = e.data;
 
   switch (message.event) {
-    case "reportSpecResults":
+    case 'reportSpecResults':
       tc.result(message.data);
       break;
-    case "reportRunnerStarting":
+    case 'reportRunnerStarting':
       tc.info(message.data);
       break;
-    case "reportRunnerResults":
+    case 'reportRunnerResults':
       tc.complete({
         coverage: window.__coverage__
       });
@@ -38,7 +38,7 @@ var createStartFn = function(tc, jasmineEnvPassedIn) {
     };
 
     worker.postMessage({
-      event: "start",
+      event: 'start',
       data: {
         files: files
       }
