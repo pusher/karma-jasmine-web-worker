@@ -41,7 +41,7 @@ var indexOf = function(collection, item) {
   return -1;
 };
 
-function WorkerReporter() {
+function WorkerReporterOld() {
 
   var getAllSpecNames = function(topLevelSuites) {
     var specNames = {};
@@ -133,6 +133,32 @@ function WorkerReporter() {
   }
 
   this.log = function() {};
+}
+
+const WorkerReporter = {
+  jasmineStarted: function(suiteInfo) {
+    self.postMessage({event: "jasmineStarted", data: suiteInfo});
+  },
+
+  suiteStarted: function(result) {
+    self.postMessage({event: "suiteStarted", data: result});
+  },
+
+  specStarted: function(result) {
+    self.postMessage({event: "specStarted", data: result});
+  },
+
+  specDone: function(result) {
+    self.postMessage({event: "specDone", data: result});
+  },
+
+  suiteDone: function(result) {
+    self.postMessage({event: "suiteDone", data: result});
+  },
+
+  jasmineDone: function(result) {
+    self.postMessage({event: "jasmineDone", data: result});
+  }
 }
 
 function init() {
