@@ -26,7 +26,8 @@
     "grunt-karma": "*",
     "grunt-auto-release": "~0.0.2",
     "grunt-npm": "~0.0.2",
-    "grunt-bump": "~0.0.7"
+    "grunt-bump": "~0.0.7",
+    "jasmine": "^3.8.0"
   },
   "peerDependencies": {
     "karma": ">=0.9"
