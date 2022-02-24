@@ -40,7 +40,7 @@ var createStartFn = function(tc, jasmineEnvPassedIn) {
     worker.postMessage({
       event: 'start',
       data: {
-        files: files
+        files: files,
       }
     });
   };
