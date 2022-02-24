@@ -5,11 +5,5 @@ self.onmessage = function(e) {
     files.forEach(function(file){
       importScripts(file);
     });
-    init();
   }
-}
-
-function init(){
-  var jasmineEnv = jasmine.getEnv();
-  jasmineEnv.execute();
 }
