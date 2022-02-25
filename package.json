@@ -4,7 +4,8 @@
   "description": "Run Karma and Jasmine tests in a web worker",
   "main": "lib/index.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,15 @@
   "author": "Vojta Jina <vojta.jina@gmail.com>",
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6",
-    "karma": "~0.9",
+    "grunt": "~1.0",
+    "grunt-contrib-jshint": "*",
+    "karma": "~6.3.4",
     "karma-jasmine": "*",
-    "grunt-karma": "~0.4",
+    "grunt-karma": "*",
     "grunt-auto-release": "~0.0.2",
     "grunt-npm": "~0.0.2",
-    "grunt-bump": "~0.0.7"
+    "grunt-bump": "~0.0.7",
+    "jasmine": "^3.8.0"
   },
   "peerDependencies": {
     "karma": ">=0.9"
